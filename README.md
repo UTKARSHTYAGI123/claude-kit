@@ -2,8 +2,17 @@
 
 Matt Pocock's skills (snapshot of github.com/mattpocock/skills @ abeeaf9, MIT), with a "docs are optional" override added, plus verification tooling.
 
-## Install (on your machine)
-    unzip ai-workflow-kit.zip && cd ai-workflow-kit && ./install.sh
+## Install
+macOS / Linux:
+
+    git clone https://github.com/UTKARSHTYAGI123/claude-kit ~/claude-kit && ~/claude-kit/install.sh --link
+
+Windows (PowerShell):
+
+    git clone https://github.com/UTKARSHTYAGI123/claude-kit $HOME\claude-kit
+    powershell -ExecutionPolicy Bypass -File $HOME\claude-kit\install.ps1 -Link
+
+Update: `git pull` in the clone, then re-run the install command.
 This puts everything in `~/.claude/skills/` (the same folder `grill-me` lives in) and `~/.claude/agents/verifier.md`. Any existing skill with the same name is backed up as `<name>.bak.<timestamp>`.
 
 ## The loop
