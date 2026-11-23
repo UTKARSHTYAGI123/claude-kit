@@ -31,4 +31,6 @@ This puts everything in `~/.claude/skills/` (the same folder `grill-me` lives in
 | `e2e-check` skill | buggy UI that unit tests miss |
 | `hooks/require-verify.sh` | skipping verification entirely |
 
+For testing someone's PR in depth (planning, safety, priorities, PR comments, regression tests), see [QA-PLAYBOOK.md](QA-PLAYBOOK.md).
+
 Skipped: the `in-progress/` skills from the repo (drafts). Note that Matt's `code-review` shadows the built-in `/code-review`. Delete `~/.claude/skills/code-review` if you prefer the built-in one.

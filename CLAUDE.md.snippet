@@ -5,4 +5,6 @@
 - **Unsure about a feature?** Run `/grill-me` before writing code.
 - **Done means verified:** never say done, fixed or works without running `/verify`. UI changes also need `/e2e-check`. Report any check you didn't run as NOT RUN.
 - **Tests:** never delete, skip or weaken a test to make it pass. If a test looks wrong, stop and tell me.
+- **A failing test is a claim, not a finding:** before reporting a bug, rule out the test itself: caps and limits in the fake data, clock or date crossings (pin time and timezone), and the fake's own call order. Have the `verifier` agent try to disprove findings before you share them.
+- **Testing someone else's code:** never send real email, payments or messages (use file or outbox modes); don't push to their branch; draft PR comments and post only when I say so.
 - **Docs:** GLOSSARY.md, ADRs and docs/agents are optional. Don't block on them or create them unless I say yes.
